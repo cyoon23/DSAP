@@ -8,4 +8,4 @@ def landingPage(request):
     context = {
         'posts': postList,
     }
-    return render(request, 'posts/landingPage.html', context)
+    return render(request, 'DSAProject/landingPage.html', context)
