@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Count from './Count';
 import Form from './Form';
-
+import NavBar from './NavBar';
 class App extends Component {
   constructor(props){
     super(props);
@@ -21,6 +21,7 @@ class App extends Component {
     const {count}=this.state
     return (
       <div className="App">
+        <NavBar/>
         <Count count={count}/>
         <Form increment={this.increment}/>
       </div>

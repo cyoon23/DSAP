@@ -1,0 +1,19 @@
+@import url(http://allfont.net/allfont.css?fonts=franklin-gothic-medium);
+.bar{
+    color:black;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', arial;
+
+}
+
+.center{
+    width: 75vw;
+}
+.red{
+    color: rgb(327, 32,36)
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
