@@ -3,7 +3,29 @@
     height: 100vh;
     background-color: black;
     color: white;
+    font-family: 'Baskerville'
+
+}
+
+.inline{
+    display:inline-block;
+   
+}
+
+.bignumber{
+    font-size: 7em;
+    margin: 0
+}
+
+.red{
+    color: rgb(327, 32,36);
+}
+
+.wrapper{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.number{
+    padding:30vh
 }
