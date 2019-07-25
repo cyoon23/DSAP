@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import "./Count.css";
+import Button from '@material-ui/core/Button';
+import Form from './Form';
+import './Count.css';
 
 class Count extends React.Component {
   constructor(props){
@@ -8,13 +10,21 @@ class Count extends React.Component {
       undergrads:7000,
       days:0,
       assaults:0,
-      official:0
+      official:0,
+      dialog: false,
     }
+  }
+
+  toggleDialog=()=>{
+    const {dialog}=this.state;
+    this.setState({
+      dialog: !dialog,
+    });
   }
   
   render() {
-    const {count} = this.props;
-    const {undergrads, days, assaults, official}= this.state;
+    const {count, increment} = this.props;
+    const {undergrads, days, assaults, official, dialog}= this.state;
     return (
       <div className="Count">
         <header>
@@ -39,10 +49,12 @@ class Count extends React.Component {
           <div className="number">
             <p className="bignumber"> {count}</p>
             <h1 className="subtype">Number of Sexual Assaults Reported.</h1>
-          
+            <Button style={{backgroundColor:'white'}}onClick={this.toggleDialog}>Increment</Button>
           </div>
+          
         </header>
-
+        
+        <Form increment={increment} dialog={dialog} handleClose={this.toggleDialog}/>
       </div>
     );
   }

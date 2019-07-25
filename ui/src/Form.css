@@ -5,6 +5,13 @@
 .inline{ 
     width: 45vw;
 }
-left{
-    
+.padding{
+    padding: 5%
+}
+
+.characterCount{
+    float:right;
+    font-family: "Bakersville";
+    font-size: 0.6em;
+    opacity: 1;
 }
