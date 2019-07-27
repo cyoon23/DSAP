@@ -16,11 +16,21 @@ class Post(models.Model):
         (UNSURE, 'Unsure')
     ]
 
-    OfficiallyReported = models.CharField(
+    Officially_Reported = models.CharField(
     max_length=6,
     choices= REPORT_CHOICES,
     default = None,
     )
+
+    #type of assault
+
+    #location it happened
+
+    #add email if you'd like to be added to a listserve to get more information on future events from duke sexual assault project
+
+    #adding a photo
+
+    
 
 
 class SchoolYear(models.Model):
